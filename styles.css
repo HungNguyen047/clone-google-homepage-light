@@ -1,0 +1,129 @@
+/* define the variables */
+:root{
+	--gray-color: #9ca3af;
+	--light-gray-color: #e5e7eb;
+	--bg-gray-color: #f3f4f6;
+	--blue-color: #1a0dab;
+}
+
+
+/* global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition-duration: 100ms;
+	font-family: arial, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+a {
+	text-decoration: unset;
+	color: unset;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	padding: 1.5rem 2rem;
+	font-size: 13px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.4rem;
+	margin-bottom: 17rem;
+}
+
+
+/* class styles */
+.googleLogo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.googleLogo img {
+	width: 17rem;
+}
+
+.searchBar {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--light-gray-color);
+	width: 36rem;
+	padding: 0.5rem 0.9rem;
+	border-radius: 50px;
+	gap: 1.2rem;
+}
+
+.searchBar input {
+	border: none;
+	outline: none;
+	font-size: 16px;
+	flex: 1;
+}
+
+.material-symbols-outlined {
+	color: var(--gray-color);
+}
+
+.searchBarLanguage {
+	font-size: 13px;
+}
+
+.searchBarLanguage p span {
+	color: var(--blue-color);
+}
+
+.searchBarMicIcon img {
+	width: 0.9rem;
+}
+
+.searchBarCamIcon img {
+	width: 1.6rem;
+}
+
+.searchButtons {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.searchButtons button {
+	font-size: 14px;
+	border: none;
+	outline: none;
+	padding: 0.6rem 1rem;
+	background-color: var(--bg-gray-color);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.searchButtons button:hover {
+	border: 1px solid var(--light-gray-color);
+}
+
+.searchButtons button:focus {
+	border: 1px solid blue;
+}
+
