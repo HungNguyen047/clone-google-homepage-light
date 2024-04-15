@@ -1,7 +1,7 @@
 /* define the variables */
 :root{
-	/* --gray-color: #9ca3af; */
-	--gray-color: #6b7280;
+	--dark-gray-color: #6b7280;
+	--gray-color: #9ca3af;
 	--medium-gray-color: #d1d5db;
 	--light-gray-color: #e5e7eb;
 	--bg-gray-color: #f3f4f6;
@@ -84,6 +84,10 @@ footer {
 	gap: 1.2rem;
 }
 
+.searchBar:hover {
+	box-shadow: 0 1px 4px var(--gray-color);
+}
+
 .searchBar input {
 	border: none;
 	outline: none;
@@ -92,7 +96,7 @@ footer {
 }
 
 .material-symbols-outlined {
-	color: var(--gray-color);
+	color: var(--dark-gray-color);
 }
 
 .searchBarLanguage {
