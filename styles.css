@@ -1,6 +1,8 @@
 /* define the variables */
 :root{
-	--gray-color: #9ca3af;
+	/* --gray-color: #9ca3af; */
+	--gray-color: #6b7280;
+	--medium-gray-color: #d1d5db;
 	--light-gray-color: #e5e7eb;
 	--bg-gray-color: #f3f4f6;
 	--blue-color: #1a0dab;
@@ -32,7 +34,7 @@ a:hover {
 }
 
 header {
-	padding: 1.5rem 2rem;
+	padding: 1rem 1.2rem;
 	font-size: 13px;
 }
 
@@ -50,7 +52,14 @@ main {
 	align-items: center;
 	justify-content: center;
 	gap: 1.4rem;
-	margin-bottom: 17rem;
+	margin-bottom: 11rem;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background: var(--light-gray-color);
+	font-size: 14px;
 }
 
 
@@ -127,3 +136,41 @@ main {
 	border: 1px solid blue;
 }
 
+.footerLocation {
+	padding: 1rem 2rem;
+}
+
+.footerLinks {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	border-top: 1px solid var(--medium-gray-color);
+}
+
+.footerLinks1,
+.footerLinks2 {
+	display: flex;
+	align-items: center;
+	gap: 1.9rem;
+}
+
+
+/* media queries */
+@media (min-width: 1024px) {
+	main {
+		margin-bottom: 14rem;
+	}
+
+	.footerLocation {
+		padding: 1rem 1.9rem;
+	}
+
+	.footerLinks {
+		flex-direction: unset;
+		align-items: center;
+		justify-content:space-between;
+		padding: 1rem 2.2rem;
+	}
+}
